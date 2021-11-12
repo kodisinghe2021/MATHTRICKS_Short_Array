@@ -3,20 +3,26 @@ package javaarrayprogramming;
 public class CopyArrayToArray {
 
     public static void main(String[] args) {
-        //create First Array
-        String names[] = {"amal", "kamal", "chamal", "namal", "salmal"};
-        //create an Empty Array
-        String copyOfNames[] = new String[names.length];
+//First array
+        String names[] = {"amal", "kamal", "namal", "salmal", "galmal"};
+//Empty Array
+        String copyOFNames[] = new String[names.length];
+        
+        //copy values 
         int i=0;
-        for (String r : names) {
-          copyOfNames[i]=r;  
-          i++;
+        for(String r:names){
+            copyOFNames[i]=r;
+            i++;
         }
-        // First Array
-        for(String r: names){System.out.print(r+" ");}
+        //print First Array
+        for(String r : names){
+            System.out.print(r+" ");
+        }
         System.out.println("");
-        //Copy of First Array
-        for(String r: copyOfNames){System.out.print(r+" ");}
+        //Print copy of array
+             for(String r : copyOFNames){
+            System.out.print(r+" ");
+        }   
     }
 
 }
